@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(219, 241, 248);
+    /* background-image: url('https://cdn.pixabay.com/photo/2015/03/26/09/58/headphones-690685_960_720.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover; */
+}
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    font-size: 40px;
+}
+header p {
+    font-size: 20px;
+}
+/* header p, header h1 {
+    color: white;
+    text-shadow: 0px 0px 50px black;
+} */
+.pads {
+    background: lightblue;
+    width: 100%;
+    display: flex;
+    z-index: 2;
+
+}
+.pads > div {
+    height: 10vh;
+    /* width: 100px; */
+    flex: 1;
+}
+.pad1 {
+    background: rgb(255, 92, 92);
+}
+.pad2 {
+    background: rgb(247, 203, 10);
+}
+.pad3 {
+    background: rgb(81, 255, 0);
+}
+.pad4 {
+    background: rgb(114, 227, 255);
+}
+.pad5 {
+    background: rgb(255, 44, 237);
+}
+.pad6 {
+    background: rgb(15, 119, 255);
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0%;
+        left: 20%;
+    }
+    50% {
+        bottom: 50%;
+        left: 50%;
+    }
+    100% {
+        bottom: 0%;
+        left: 80%;
+    }
+}
+
+.visual div {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+    left: 20%;
+    z-index: 1;
+}
+.illustration1 {
+    z-index: -1;
+}
